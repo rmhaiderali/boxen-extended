@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "ansi-regex": "^6.2.2",
+    "boxen": "^8.0.1",
+    "regex-escape": "^3.4.11"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
