@@ -1,7 +1,8 @@
 {
   "name": "boxen-extended",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "ansi-regex": "^6.2.2",
     "boxen": "^8.0.1",
