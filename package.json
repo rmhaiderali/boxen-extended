@@ -4,8 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "prepack": "npm run build",
     "build": "tsdown && prettier dist --write --ignore-path /dev/null"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "ansi-regex": "^6.2.2",
     "boxen": "^8.0.1",
