@@ -1,6 +1,6 @@
 # boxen-extended
 
-Extended wrapper around [`boxen`](https://github.com/sindresorhus/boxen) for rendering multiple values in one box, with divider support and smart `inspect()` formatting.
+Extended wrapper around [boxen](https://github.com/sindresorhus/boxen) for rendering multiple values in one box, with divider support and smart inspect() formatting.
 
 ## Install
 
@@ -22,6 +22,18 @@ const output = boxenExtended(
 )
 
 console.log(output)
+
+// ┌────────────────────────┐
+// │ 123                    │
+// ├────────────────────────┤
+// │ Alice                  │
+// ├────────────────────────┤
+// │ [ 'one', 'two' ]       │
+// ├────────────────────────┤
+// │ { foo: 'bar' }         │
+// ├────────────────────────┤
+// │ [Function (anonymous)] │
+// └────────────────────────┘
 ```
 
 By default:

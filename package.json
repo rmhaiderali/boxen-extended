@@ -1,15 +1,22 @@
 {
   "name": "boxen-extended",
-  "version": "0.2.0",
-  "main": "index.js",
+  "version": "0.2.1",
   "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "scripts": {
-    "prepack": "npm run build",
+    "prepack": "npm i && npm run build",
     "build": "tsdown && prettier dist --write --ignore-path /dev/null"
   },
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmhaiderali/boxen-extended.git"
+  },
   "dependencies": {
     "ansi-regex": "^6.2.2",
     "boxen": "^8.0.1",
