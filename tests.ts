@@ -149,3 +149,29 @@ const s10 = join(
 )
 
 console.log(10, t10 === s10)
+
+const t11 = boxenExtended("Hello", "World", {
+  boxenOptions: { borderStyle: "none" },
+})
+
+const s11 = join(
+  //
+  " Hello ",
+  " World ",
+)
+
+console.log(11, t11 === s11)
+
+const t12 = boxenExtended("Hello", "World", {
+  boxenOptions: { borderStyle: "none", padding: 1 },
+})
+
+const s12 = join(
+  "           ",
+  "   Hello   ",
+  "           ",
+  "   World   ",
+  "           ",
+)
+
+console.log(12, t12 === s12)
