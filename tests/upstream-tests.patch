@@ -1,0 +1,77 @@
+diff --git a/tests/background-option.js b/tests/background-option.js
+index 53fb998..60f0c30 100644
+--- a/tests/background-option.js
++++ b/tests/background-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/border-option.js b/tests/border-option.js
+index 5c7f30f..54debc7 100644
+--- a/tests/border-option.js
++++ b/tests/border-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/float-option.js b/tests/float-option.js
+index b8c04ae..a1f0ad1 100644
+--- a/tests/float-option.js
++++ b/tests/float-option.js
+@@ -3 +3 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/fullscreen-option.js b/tests/fullscreen-option.js
+index ec84ae2..b7c7716 100644
+--- a/tests/fullscreen-option.js
++++ b/tests/fullscreen-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/height-option.js b/tests/height-option.js
+index 822ec64..6e89e1b 100644
+--- a/tests/height-option.js
++++ b/tests/height-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/main.js b/tests/main.js
+index 20df42e..3581f79 100644
+--- a/tests/main.js
++++ b/tests/main.js
+@@ -4 +4 @@ import chalk from 'chalk';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/margin-option.js b/tests/margin-option.js
+index 96e54a6..a0659af 100644
+--- a/tests/margin-option.js
++++ b/tests/margin-option.js
+@@ -3 +3 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/padding-option.js b/tests/padding-option.js
+index dfe8c29..acf7fa3 100644
+--- a/tests/padding-option.js
++++ b/tests/padding-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/text-align-option.js b/tests/text-align-option.js
+index aaab8e7..4d28e8d 100644
+--- a/tests/text-align-option.js
++++ b/tests/text-align-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/title-option.js b/tests/title-option.js
+index 62aec6c..116d1e1 100644
+--- a/tests/title-option.js
++++ b/tests/title-option.js
+@@ -3 +3 @@ import {Chalk} from 'chalk';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';
+diff --git a/tests/width-option.js b/tests/width-option.js
+index 42c6e4e..21f60e1 100644
+--- a/tests/width-option.js
++++ b/tests/width-option.js
+@@ -2 +2 @@ import test from 'ava';
+-import boxen from '../index.js';
++import {boxenCompatible as boxen} from '../../dist-boxen-from-git/index.mjs';

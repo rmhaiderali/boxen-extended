@@ -8,7 +8,10 @@
   "types": "./dist/index.d.mts",
   "scripts": {
     "prepack": "npm i && npm run build",
-    "build": "tsdown && prettier dist --write --ignore-path /dev/null"
+    "build": "tsdown && prettier dist --write --ignore-path /dev/null",
+    "test:node": "node tests/node/index.js",
+    "test:web": "node tests/web/utils/transform-to-web-module.js && cp tests/web/index.html dist-web && npx serve dist-web",
+    "test:upstream": "sh tests/upstream-compatibility.sh"
   },
   "files": [
     "dist"
@@ -20,12 +23,13 @@
   "dependencies": {
     "ansi-regex": "^6.2.2",
     "boxen": "^8.0.1",
-    "node-inspect-extracted": "^3.3.2",
-    "tsdown": "^0.21.7",
-    "typescript": "^6.0.2"
+    "node-inspect-extracted": "^3.3.2"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "parse-imports": "^3.0.0",
+    "prettier": "^3.8.1",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
   },
   "prettier": {
     "semi": false
