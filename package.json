@@ -9,8 +9,8 @@
   "scripts": {
     "prepack": "npm i && npm run build",
     "build": "tsdown && prettier dist --write --ignore-path /dev/null",
-    "test:node": "node tests/exit-if-no-build.js && node tests/node/index.js",
-    "test:web": "node tests/exit-if-no-build.js && node tests/web/utils/transform-to-web-module.js && cp tests/web/index.html dist-web && npx serve dist-web",
+    "test:node": "sh tests/node/test.sh",
+    "test:web": "sh tests/web/test.sh",
     "test:upstream": "sh tests/upstream-compatibility.sh",
     "update:upstream": "git submodule update --remote boxen"
   },
@@ -29,6 +29,7 @@
   "devDependencies": {
     "parse-imports": "^3.0.0",
     "prettier": "^3.8.1",
+    "serve-static-cli": "github:rmhaiderali/serve-static-cli",
     "tsdown": "^0.21.7",
     "typescript": "^6.0.2"
   },
