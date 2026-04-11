@@ -3,18 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module">
-      import boxenExtended from "./index.js"
-      console.log(
-        boxenExtended(
-          123,
-          "Alice",
-          ["one", "two"],
-          { foo: "bar" },
-          () => "hello world",
-        ),
-      )
-    </script>
+    <title>Test Boxen Extended</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code&display=swap");
+
+      .terminal {
+        font-size: 16px;
+        white-space: pre;
+        font-weight: normal;
+        min-width: fit-content;
+        font-family: "Google Sans Code", monospace;
+      }
+    </style>
   </head>
+  <body>
+    <div class="terminal">Loading</div>
+    <script type="module">
+      import { AnsiUp } from "https://cdn.jsdelivr.net/npm/ansi_up@6.0.6/+esm"
+      import boxenExtended from "./index.js"
+
+      const ansi_up = new AnsiUp()
+
+      const result = boxenExtended(
+        123,
+        "Alice",
+        ["one", "two"],
+        { foo: "bar" },
+        () => "hello world",
+      )
+
+      document.querySelector(".terminal").innerHTML =
+        ansi_up.ansi_to_html(result)
+
+      console.log(result)
+    </script>
+  </body>
 </html>
