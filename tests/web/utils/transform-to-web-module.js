@@ -6,7 +6,7 @@ const projectRoot = import.meta.dirname + "/../../.."
 const dist = projectRoot + "/dist"
 const distWeb = projectRoot + "/dist-web"
 
-const modulePath = projectRoot + "/dist/index.mjs"
+const modulePath = dist + "/index.mjs"
 
 const module = fs.readFileSync(modulePath, "utf-8")
 

@@ -2,13 +2,15 @@
 # cd boxen
 # git diff -U0 > ../tests/upstream-tests.patch
 
-if [ ! -d "dist-boxen-from-git" ]; then
-    mkdir dist-boxen-from-git
+node tests/exit-if-no-build.js
+
+if [ $? -eq 1 ]; then
+    exit 1
 fi
 
-cp dist/index.mjs dist-boxen-from-git/index.mjs
+git submodule update --init boxen
 
-sed -i '1s|.*|import boxen from "../boxen/index.js"|' dist-boxen-from-git/index.mjs
+sed -i '1s|.*|import boxen from "../boxen/index.js"|' dist/index.mjs
 
 cd boxen
 
@@ -23,3 +25,7 @@ git apply --unidiff-zero ../tests/upstream-tests.patch
 npm run test
 
 git restore .
+
+cd ..
+
+sed -i '1s|.*|import boxen from "boxen"|' dist/index.mjs
