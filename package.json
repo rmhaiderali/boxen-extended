@@ -10,7 +10,7 @@
     "prepack": "npm i && npm run build",
     "build": "tsdown && prettier dist --write --ignore-path /dev/null",
     "test:node": "sh tests/node/test.sh",
-    "test:web": "sh tests/web/test.sh",
+    "test:web": "nodemon --watch tests/web/index.html --watch dist/index.mjs --exec sh tests/web/test.sh",
     "test:upstream": "sh tests/upstream-compatibility.sh",
     "update:upstream": "git submodule update --remote boxen"
   },
@@ -27,6 +27,7 @@
     "node-inspect-extracted": "^3.3.2"
   },
   "devDependencies": {
+    "nodemon": "^3.1.14",
     "parse-imports": "^3.0.0",
     "prettier": "^3.8.1",
     "serve-static-cli": "github:rmhaiderali/serve-static-cli",
