@@ -10,4 +10,10 @@ node tests/web/utils/transform-to-web-module.js
 
 cp tests/web/index.html dist-web
 
-PORT=3000 npx serve-static-cli dist-web
+RUNNER="npx"
+
+if [ -x "$(command -v bun)" ]; then
+    RUNNER="bunx --bun"
+fi
+
+PORT=3000 $RUNNER serve-static-cli dist-web
