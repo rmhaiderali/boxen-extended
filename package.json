@@ -21,6 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/rmhaiderali/boxen-extended.git"
   },
+  "homepage": "https://github.com/rmhaiderali/boxen-extended",
   "dependencies": {
     "ansi-regex": "^6.2.2",
     "boxen": "^8.0.1",
